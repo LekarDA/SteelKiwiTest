@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="EditTextParent">
+        <item name="android:padding">@dimen/medium</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+    </style>
+
+    <style name="EditTextExtra" parent="EditTextParent">
+        <item name="android:layout_marginTop">@dimen/medium</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="CardNumber" parent="EditTextExtra">
+        <item name="android:maxLength">4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:letterSpacing">0.25</item>
+    </style>
+
+    <style name="CustomTextView">
+        <item name="android:layout_marginStart">@dimen/very_small</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">@dimen/big</item>
+    </style>
+
+</resources>

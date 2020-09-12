@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+ <EditText
+     android:id="@+id/et_cardName"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="@dimen/big"
+     android:layout_marginEnd="@dimen/big"
+     android:layout_marginTop="@dimen/large"
+     style="@style/EditTextParent"
+     android:hint="@string/card_name"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+ <TextView
+     android:id="@+id/tv_cardNumber"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@style/CustomTextView"
+     android:text="@string/card_number"
+     app:layout_constraintStart_toStartOf="@+id/et_cardName"
+     app:layout_constraintTop_toBottomOf="@+id/et_cardName"/>
+
+ <EditText
+     android:layout_width="0dp"
+     android:id="@+id/et_cardNumber1"
+     android:layout_height="wrap_content"
+     android:layout_marginEnd="@dimen/very_small"
+     style="@style/CardNumber"
+     app:layout_constraintStart_toStartOf="@+id/et_cardName"
+     app:layout_constraintTop_toBottomOf="@+id/tv_cardNumber"
+     app:layout_constraintEnd_toStartOf="@+id/et_cardNumber2"
+     />
+
+ <EditText
+     android:id="@+id/et_cardNumber2"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/medium"
+     android:layout_marginStart="@dimen/very_small"
+     android:layout_marginEnd="@dimen/very_small"
+     style="@style/CardNumber"
+     app:layout_constraintStart_toEndOf="@+id/et_cardNumber1"
+     app:layout_constraintTop_toBottomOf="@+id/tv_cardNumber"
+     app:layout_constraintEnd_toStartOf="@+id/et_cardNumber3"
+     />
+
+ <EditText
+     android:id="@+id/et_cardNumber3"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/medium"
+     android:layout_marginStart="@dimen/very_small"
+     android:layout_marginEnd="@dimen/very_small"
+     style="@style/CardNumber"
+     app:layout_constraintStart_toEndOf="@+id/et_cardNumber2"
+     app:layout_constraintTop_toBottomOf="@+id/tv_cardNumber"
+     app:layout_constraintEnd_toStartOf="@+id/et_cardNumber4"
+     />
+
+ <EditText
+     android:id="@+id/et_cardNumber4"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/medium"
+     android:layout_marginStart="@dimen/very_small"
+     style="@style/CardNumber"
+     app:layout_constraintStart_toEndOf="@+id/et_cardNumber3"
+     app:layout_constraintTop_toBottomOf="@+id/tv_cardNumber"
+     app:layout_constraintEnd_toEndOf="@+id/et_cardName"
+     />
+
+ <TextView
+     android:id="@+id/tv_expireDate"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@style/CustomTextView"
+     android:text="@string/expire_date"
+     app:layout_constraintStart_toStartOf="@+id/et_cardName"
+     app:layout_constraintTop_toBottomOf="@+id/et_cardNumber1"/>
+
+
+ <TextView
+     android:id="@+id/tv_securityCode"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@style/CustomTextView"
+     android:text="@string/security_code"
+     app:layout_constraintStart_toStartOf="@+id/et_cardNumber3"
+     app:layout_constraintTop_toBottomOf="@+id/et_cardNumber3"/>
+
+ <EditText
+     android:id="@+id/et_expireDate"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginEnd="@dimen/very_small"
+     android:hint="@string/et_expire_date"
+     android:maxLength="5"
+     style="@style/EditTextExtra"
+     app:layout_constraintStart_toStartOf="@id/et_cardNumber1"
+     app:layout_constraintTop_toBottomOf="@+id/tv_expireDate"
+     app:layout_constraintEnd_toEndOf="@+id/et_cardNumber2"/>
+
+ <EditText
+     android:id="@+id/et_securityCode"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="@dimen/very_small"
+     android:hint="@string/et_security_code"
+     android:maxLength="3"
+     android:letterSpacing="0.25"
+     android:inputType="numberPassword"
+     style="@style/EditTextExtra"
+     app:layout_constraintStart_toStartOf="@id/et_cardNumber3"
+     app:layout_constraintTop_toBottomOf="@+id/tv_securityCode"
+     app:layout_constraintEnd_toEndOf="@id/et_cardNumber4"/>
+
+ <Button
+     android:id="@+id/btn_addCard"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/add_card"
+     android:padding="@dimen/medium"
+     android:layout_marginTop="@dimen/large"
+     android:background="@drawable/button_background"
+     android:textColor="@drawable/text_selector"
+     app:layout_constraintStart_toStartOf="@+id/et_expireDate"
+     app:layout_constraintEnd_toEndOf="@+id/et_securityCode"
+     app:layout_constraintTop_toBottomOf="@+id/et_expireDate"
+     />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

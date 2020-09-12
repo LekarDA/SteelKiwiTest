@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_radius">5dp</dimen>
+    <dimen name="borders_width">1dp</dimen>
+
+    <dimen name="very_small">2dp</dimen>
+    <dimen name="medium">12dp</dimen>
+    <dimen name="big">20dp</dimen>
+    <dimen name="large">28dp</dimen>
+</resources>

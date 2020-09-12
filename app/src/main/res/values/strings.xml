@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SteelKiwi</string>
+    <string name="card_name">Name on Card</string>
+    <string name="card_number">Card number</string>
+    <string name="expire_date">Expire date</string>
+    <string name="security_code">Security code</string>
+    <string name="et_expire_date">MM/YY</string>
+    <string name="et_security_code">***</string>
+    <string name="add_card">Add card</string>
+    <string name="btn_ok">ok</string>
+</resources>
